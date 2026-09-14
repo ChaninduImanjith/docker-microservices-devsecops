@@ -251,3 +251,38 @@ Containerized Deployment
 ```
 
 This architecture demonstrates how modern containerized applications can combine **microservices architecture**, **automation**, and **DevSecOps security practices** in a maintainable deployment workflow.
+
+---
+
+## 📊 Project Verification & Security Scans
+
+### 1. Docker Compose Build & Deployment
+
+Successful build and startup of all microservices (`postgres`, `redis`, `backend`, `nginx`) with health checks passing:
+
+![Docker Compose Build & Deployment](docs/images/docker-compose-build.png)
+
+---
+
+### 2. DevSecOps: Image Vulnerability Scanning (Docker Scout)
+
+Security analysis of the backend container image using Docker Scout to identify and track vulnerabilities (CVEs) across layers:
+
+![Docker Scout Vulnerability Scanning](docs/images/docker-scout-vulnerability-scan.png)
+
+---
+
+### 3. Container Resource Usage & Performance Monitoring
+
+Real-time monitoring of CPU, Memory, Disk I/O, and Network I/O metrics in Docker Desktop:
+
+![Container Stats & Resource Usage](docs/images/container-stats-monitoring.png)
+
+---
+
+### 4. Backend Health & Service Logs
+
+Application logs showing active Uvicorn server processes and successful health check probes (`HTTP 200 OK` on `/health`):
+
+![Backend Service Logs](docs/images/backend-logs-healthcheck.png)
+
